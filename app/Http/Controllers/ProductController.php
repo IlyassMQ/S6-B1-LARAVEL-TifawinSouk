@@ -71,7 +71,7 @@ class ProductController extends Controller
          $validated = $request->validate([
             'name' => 'required|max:100',
             'reference' => 'required|unique:products,reference,' . $product->id,
-            'short_description' => 'nullable',
+            'description' => 'nullable',
             'price' => 'required|numeric|min:0',
             'stock' => 'required|integer|min:0',
             'category_id' => 'required|exists:categories,id',

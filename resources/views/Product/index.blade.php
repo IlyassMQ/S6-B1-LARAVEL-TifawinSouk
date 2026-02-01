@@ -13,7 +13,10 @@
     <div class="flex justify-between items-center mb-5">
         <h1 class="text-2xl font-bold text-gray-100">Products</h1>
         <a href="{{ route('products.create') }}" class="bg-blue-700 text-white px-4 py-2 rounded">+ Add Product</a>
+        <a href="{{ route('category.index') }}" class="bg-blue-700 text-white px-4 py-2 rounded">Categorie</a>
     </div>
+
+    
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
